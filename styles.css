@@ -1,0 +1,344 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container_menu_header{
+  background: linear-gradient(135deg, #d94f8a, #f58bb3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1{
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.menu_header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  max-width: 1100px;
+}
+
+.menu_header a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.menu_header a:hover{
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-2px);
+}
+
+.container_imagem{
+  position: relative;
+  overflow: hidden;
+}
+
+.container_imagem img{
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.72);
+}
+
+.container_botao{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+  color: #002a3f;
+  padding: 28px;
+  border-radius: 24px;
+  width: 85%;
+  max-width: 550px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.container_botao h2{
+  background: linear-gradient(135deg, #d94f8a, #f58bb3);
+  color: white;
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.container_botao p{
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.btn{
+  display: inline-block;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #d94f8a, #f58bb3);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 18px;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 16px rgba(217, 79, 138, 0.25);
+}
+
+.btn:hover{
+  transform: translateY(-3px) scale(1.03);
+}
+
+.section-title{
+  background: linear-gradient(135deg, #d94f8a, #f58bb3);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 22px;
+  margin: 70px auto 0;
+  border-radius: 18px;
+  max-width: 900px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+#saude_ginecologica img{
+  height: 40vh;
+}
+
+#saude_sexual img{
+  height: 40vh;
+}
+
+#saude_materna img{
+  height: 40vh;
+}
+
+.about{
+  background-color: white;
+  padding: 40px 25px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  line-height: 1.8;
+}
+
+.about p{
+  max-width: 900px;
+  margin: 0 auto 18px;
+  font-size: 17px;
+}
+
+
+/*.about img{
+  height: 40vh;
+}*/
+
+
+
+.tips-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto 0;
+}
+
+.tip{
+  background-color: white;
+  padding: 22px;
+  border-left: 6px solid #d94f8a;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  transition: 0.3s ease;
+}
+
+.tip:hover{
+  transform: translateY(-4px);
+}
+
+
+h1{
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.container-footer{
+  background: linear-gradient(135deg, #d94f8a, #f58bb3);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  70px 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.container-block-left{
+  max-width: 500px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.container-block-left a{
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.container-block-left a:hover{
+  border-bottom: 2px solid white;
+}
+
+.container-block-right{
+  text-align: right;
+  
+}
+
+.container-block-right p{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.container-block-right a{
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.container-block-right a:hover{
+  border-bottom: 2px solid white;
+}
+
+
+
+@media (max-width: 768px){
+  h1{
+    font-size: 24px;
+  }
+
+  .container_menu_header{
+    padding: 20px 12px;
+    height: auto;
+  }
+
+  .menu_header{
+    gap: 8px;
+  }
+
+  .menu_header a{
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .container_imagem img{
+    height: 60vh;
+  }
+
+  .container_botao{
+    width: 92%;
+    padding: 18px;
+    top: 60%;
+  }
+
+  .container_botao h2{
+    font-size: 18px;
+  }
+
+  .container_botao p{
+    font-size: 14px;
+  }
+
+  .btn{
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  .section-title{
+    font-size: 1.4rem;
+    padding: 16px;
+    margin-top: 50px;
+  }
+
+  .about{
+    padding: 25px 15px;
+  }
+
+  .about p{
+    font-size: 15px;
+  }
+
+  .about img{
+    height: 24vh;
+  }
+
+  #saude_ginecologica img{
+    width: 100%;
+    height: auto;
+  }
+
+  #saude_sexual img{
+    width: 100%;
+    height: auto;
+  }
+
+  #saude_materna img{
+    width: 100%;
+    height: auto;
+  }
+
+  .container-footer{
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+  .container-block-right{
+    text-align: center;
+  }
+}
+
+
